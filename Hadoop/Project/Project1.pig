@@ -1,5 +1,5 @@
 --LOAD the Input File
-inputFile = LOAD 'hdfs:///user/nayanshri/input' USING PigStorage('\t') AS (name:chararray, line:chararray);
+inputFile = LOAD 'hdfs:///user/debarati08/input' USING PigStorage('\t') AS (name:chararray, line:chararray);
 
 -- Filter out the first 2 lines
 ranked = RANK inputFile;
